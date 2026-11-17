@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing page personal: proyecto, habilidades y contacto." />
+  <title>Francisco | Landing Personal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              50: '#eef2ff', 100: '#e0e7ff', 200: '#c7d2fe', 300: '#a5b4fc',
+              400: '#818cf8', 500: '#6366f1', 600: '#4f46e5', 700: '#4338ca',
+              800: '#3730a3', 900: '#312e81',
+            },
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+  <!-- ===== Cabecera y navegación ===== -->
+  <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between px-4 py-4" aria-label="Navegación principal">
+      <a href="#inicio" class="text-xl font-bold text-primary-600">Mi&nbsp;Landing</a>
+
+      <!-- Menú escritorio -->
+      <ul class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <li><a href="#inicio" class="hover:text-primary-600 transition">Inicio</a></li>
+        <li><a href="#sobre-mi" class="hover:text-primary-600 transition">Sobre mí</a></li>
+        <li><a href="#habilidades" class="hover:text-primary-600 transition">Habilidades</a></li>
+        <li><a href="#proyectos" class="hover:text-primary-600 transition">Proyectos</a></li>
+        <li><a href="#contacto"
+               class="rounded-lg bg-primary-600 px-4 py-2 text-white hover:bg-primary-700 transition">Contacto</a></li>
+      </ul>
+
+      <!-- Botón menú móvil -->
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg hover:bg-gray-100" aria-label="Abrir menú" aria-expanded="false">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Menú móvil -->
+    <ul id="menu-mobile" class="hidden md:hidden flex-col gap-2 px-4 pb-4 text-sm font-medium">
+      <li><a href="#inicio" class="block py-2 hover:text-primary-600">Inicio</a></li>
+      <li><a href="#sobre-mi" class="block py-2 hover:text-primary-600">Sobre mí</a></li>
+      <li><a href="#habilidades" class="block py-2 hover:text-primary-600">Habilidades</a></li>
+      <li><a href="#proyectos" class="block py-2 hover:text-primary-600">Proyectos</a></li>
+      <li><a href="#contacto" class="block py-2 text-primary-600 font-semibold">Contacto</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section id="inicio" class="bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+      <div class="max-w-6xl mx-auto px-4 py-24 md:py-32 text-center">
+        <p class="text-primary-200 font-medium tracking-wide uppercase mb-4">Hola, soy</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Francisco</h1>
+        <p class="max-w-2xl mx-auto text-lg md:text-xl text-primary-100 mb-10">
+          Desarrollador y entusiasta de la Inteligencia Artificial.
+          Construyo productos que combinan tecnología, diseño y utilidad real.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+          <a href="#proyectos"
+             class="rounded-lg bg-white text-primary-700 font-semibold px-6 py-3 hover:bg-primary-50 transition">
+            Ver proyectos
+          </a>
+          <a href="#contacto"
+             class="rounded-lg border border-white/40 font-semibold px-6 py-3 hover:bg-white/10 transition">
+            Contactar
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Sobre mí ===== -->
+    <section id="sobre-mi" class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold mb-4">Sobre mí</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <p class="md:col-span-2 text-gray-600 leading-relaxed">
+          Soy un profesional apasionado por la tecnología y la Inteligencia Artificial.
+          Me formo de manera continua y disfruto creando soluciones sencillas para
+          problemas reales. Esta landing es un ejemplo de mi forma de trabajar:
+          simple, directa y funcional, construida solo con HTML, CSS y Tailwind.
+        </p>
+        <ul class="space-y-3 text-gray-600">
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-primary-500"></span> Desarrollo web
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-primary-500"></span> Inteligencia Artificial
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-2 h-2 rounded-full bg-primary-500"></span> Aprendizaje continuo
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Habilidades ===== -->
+    <section id="habilidades" class="bg-white border-y border-gray-200">
+      <div class="max-w-6xl mx-auto px-4 py-20">
+        <h2 class="text-3xl font-bold mb-10">Habilidades</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <article class="rounded-xl p-6 bg-gray-50 border border-gray-200 hover:border-primary-400 transition">
+            <h3 class="font-semibold text-lg mb-2">HTML &amp; CSS</h3>
+            <p class="text-sm text-gray-600">Maquetación semántica y responsive con Tailwind CSS.</p>
+          </article>
+          <article class="rounded-xl p-6 bg-gray-50 border border-gray-200 hover:border-primary-400 transition">
+            <h3 class="font-semibold text-lg mb-2">JavaScript</h3>
+            <p class="text-sm text-gray-600">Interactividad básica en el navegador sin frameworks.</p>
+          </article>
+          <article class="rounded-xl p-6 bg-gray-50 border border-gray-200 hover:border-primary-400 transition">
+            <h3 class="font-semibold text-lg mb-2">Git &amp; GitHub</h3>
+            <p class="text-sm text-gray-600">Control de versiones y despliegue con GitHub Pages.</p>
+          </article>
+          <article class="rounded-xl p-6 bg-gray-50 border border-gray-200 hover:border-primary-400 transition">
+            <h3 class="font-semibold text-lg mb-2">Inteligencia Artificial</h3>
+            <p class="text-sm text-gray-600">Uso práctico de LLMs y herramientas de IA generativa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Proyectos ===== -->
+    <section id="proyectos" class="max-w-6xl mx-auto px-4 py-20">
+      <h2 class="text-3xl font-bold mb-10">Proyectos</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <article class="rounded-xl overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-md transition">
+          <div class="h-48 bg-gradient-to-r from-primary-400 to-primary-600"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">IA Maker</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Este repositorio: una landing page personal construida con HTML semántico
+              y Tailwind CSS, desplegada en GitHub Pages.
+            </p>
+            <a href="https://github.com/frisendo-pixel/ia-maker" target="_blank" rel="noopener"
+               class="text-primary-600 font-medium hover:underline">Ver en GitHub →</a>
+          </div>
+        </article>
+        <article class="rounded-xl overflow-hidden bg-white border border-gray-200 shadow-sm hover:shadow-md transition">
+          <div class="h-48 bg-gradient-to-r from-gray-700 to-gray-900"></div>
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Próximamente</h3>
+            <p class="text-gray-600 text-sm mb-4">
+              Espacio reservado para el siguiente proyecto. Sustituye esta tarjeta
+              por tu propio trabajo.
+            </p>
+            <a href="#" class="text-primary-600 font-medium hover:underline">Ver más →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Contacto ===== -->
+    <section id="contacto" class="bg-primary-600 text-white">
+      <div class="max-w-6xl mx-auto px-4 py-20 text-center">
+        <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+        <p class="text-primary-100 max-w-xl mx-auto mb-8">
+          ¿Quieres hablar de un proyecto o simplemente saludar? Escríbeme y te respondo lo antes posible.
+        </p>
+        <a href="mailto:tu-email@ejemplo.com"
+           class="inline-block rounded-lg bg-white text-primary-700 font-semibold px-8 py-3 hover:bg-primary-50 transition">
+          Enviar correo
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Pie de página ===== -->
+  <footer class="bg-gray-900 text-gray-400">
+    <div class="max-w-6xl mx-auto px-4 py-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
+      <p>© 2026 Francisco. Todos los derechos reservados.</p>
+      <ul class="flex gap-6">
+        <li><a href="https://github.com/frisendo-pixel" target="_blank" rel="noopener" class="hover:text-white transition">GitHub</a></li>
+        <li><a href="#" class="hover:text-white transition">LinkedIn</a></li>
+        <li><a href="#inicio" class="hover:text-white transition">Volver arriba ↑</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Menú móvil accesible
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu-mobile');
+    btn.addEventListener('click', () => {
+      const abierto = menu.classList.toggle('hidden') === false;
+      btn.setAttribute('aria-expanded', abierto);
+    });
+    menu.querySelectorAll('a').forEach((a) =>
+      a.addEventListener('click', () => {
+        menu.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+      })
+    );
+  </script>
+</body>
+</html>
