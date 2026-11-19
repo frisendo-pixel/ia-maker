@@ -12,7 +12,7 @@ Landing page personal estática: solo **HTML** y **Tailwind CSS** (vía CDN). Si
 
 ## URL pública
 
-https://frisendo-pixel.github.io/ia-maker/
+https://frisendo.github.io/ia-maker/
 
 ## Desarrollo
 

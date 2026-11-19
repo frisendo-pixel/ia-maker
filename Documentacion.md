@@ -26,11 +26,11 @@ base de datos: el archivo `index.html` contiene toda la página y se sirve tal c
 
 | Recurso | URL |
 |---|---|
-| **Página pública (producción)** | https://frisendo-pixel.github.io/ia-maker/ |
-| **Repositorio en GitHub** | https://github.com/frisendo-pixel/ia-maker |
-| WSDL/página en repo | https://github.com/frisendo-pixel/ia-maker/blob/main/index.html |
-| Configuración de Pages | https://github.com/frisendo-pixel/ia-maker/settings/pages |
-| Estado del despliegue | https://github.com/frisendo-pixel/ia-maker/actions |
+| **Página pública (producción)** | https://frisendo.github.io/ia-maker/ |
+| **Repositorio en GitHub** | https://github.com/frisendo/ia-maker |
+| WSDL/página en repo | https://github.com/frisendo/ia-maker/blob/main/index.html |
+| Configuración de Pages | https://github.com/frisendo/ia-maker/settings/pages |
+| Estado del despliegue | https://github.com/frisendo/ia-maker/actions |
 
 ---
 
@@ -38,9 +38,9 @@ base de datos: el archivo `index.html` contiene toda la página y se sirve tal c
 
 | Dato | Valor |
 |---|---|
-| Usuario de GitHub | `frisendo-pixel` |
+| Usuario de GitHub | `frisendo` |
 | Email de commit | `frisendo@gmail.com` |
-| Remoto (`origin`) | `https://github.com/frisendo-pixel/ia-maker.git` |
+| Remoto (`origin`) | `https://github.com/frisendo/ia-maker.git` |
 | Rama principal | `main` |
 | Remoto por defecto para push/pull | `origin/main` |
 
@@ -56,7 +56,7 @@ fb48910  Cambiar a HTML + Tailwind y añadir despliegue con GitHub Pages
 
 ```powershell
 # Clonar el repositorio en otro equipo
-git clone https://github.com/frisendo-pixel/ia-maker.git
+git clone https://github.com/frisendo/ia-maker.git
 
 # Subir cambios
 git add .
@@ -76,7 +76,7 @@ git pull
 - Desplegada en **GitHub Pages** mediante un workflow de **GitHub Actions**
   (`.github/workflows/deploy.yml`).
 - Cada `push` a la rama `main` publica automáticamente la nueva versión.
-- URL pública: **https://frisendo-pixel.github.io/ia-maker/**
+- URL pública: **https://frisendo.github.io/ia-maker/**
 
 ### ✅ La estructura HTML es semántica
 
@@ -112,7 +112,7 @@ El `index.html` usa etiquetas semánticas de HTML5:
 
 ### ✅ El código está subido a un repositorio de GitHub
 
-- Repositorio: **https://github.com/frisendo-pixel/ia-maker** (rama `main`).
+- Repositorio: **https://github.com/frisendo/ia-maker** (rama `main`).
 - Despliegue reproducible desde el propio repositorio (infraestructura como código en `.github/workflows/deploy.yml`).
 
 ### ✅ La página incluye las secciones mínimas
@@ -156,7 +156,7 @@ npx serve .
 
 1. Se hace `git push` a la rama `main`.
 2. GitHub Actions ejecuta el workflow **"Desplegar en GitHub Pages"**.
-3. El sitio se publica en https://frisendo-pixel.github.io/ia-maker/
+3. El sitio se publica en https://frisendo.github.io/ia-maker/
 
 El estado de cada despliegue se consulta en la pestaña **Actions** del repositorio
 (verde = publicado, rojo = error).
